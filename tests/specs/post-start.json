@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Post job",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Begin job posting form"
+            }
+          }
+        ],
+        "send": {
+          "callback": "post:start"
+        }
+      }
+    ]
+  }
+]
