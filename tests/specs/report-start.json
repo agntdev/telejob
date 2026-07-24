@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Report job",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Submit a report for a job listing"
+            }
+          }
+        ],
+        "send": {
+          "callback": "report:start"
+        }
+      }
+    ]
+  }
+]
