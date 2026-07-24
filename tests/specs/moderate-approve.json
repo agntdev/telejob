@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Approve",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Approve a moderation queue item"
+            }
+          }
+        ],
+        "send": {
+          "callback": "moderate:approve"
+        }
+      }
+    ]
+  }
+]
